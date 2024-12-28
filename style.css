@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins";
+}
+
+body{
+    background-color: #080808;
+    color: white;
+    
+}
+.header{
+    position: fixed;
+    width: 100%;
+    top : 0;
+    left: 0;
+    padding: 4rem 15%;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+#menu-icon{
+    font-size: 3.5rem;
+    color: rgb(181, 137, 34);
+    display: none;
+}
+.logo{
+    font-size: 3rem;
+    color: rgb(181, 137, 34);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3 ease-in-out;
+    transition: box-shadow 0.3s ease;
+}
+
+.navbar a{
+    font-size: 1.9rem;
+    font-family: "Poppins";
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    border-bottom: 3px solid transparent;
+
+}
+
+.navbar a:hover{
+    color: rgb(181, 137, 34);
+    border-bottom: 3px solid rgb(181, 137, 34);
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 15%;
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+}
+
+.home-content{
+    display: flex;
+    flex-direction: column;
+    /* align-self: flex-end;     */
+    text-align: right;
+}
+.home-content h1{
+    font-size: 4.5rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    line-height: 1;
+}
+
+.home-content h2{
+    margin : 1rem 0;
+    padding-top: 15px;
+    font-size: 3.2rem;
+    color: rgb(181, 137, 34);
+}
+
+.home-image img{
+    width: 22vw;
+    border-radius: 100%;
+    box-shadow: 0 0 25px rgba(173, 166, 147, 0.4);
+    transition: 0.3s ease-in-out;
+}
+
+.home-image img:hover{
+    box-shadow: 0 0 25px rgba(173, 166, 147, 0.4) , 
+    0 0 50px rgba(173, 166, 147, 0.4),
+    0 0 100px rgba(173, 166, 147, 0.4);
+}
+.socialicons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    padding: 1rem;
+    background: transparent;
+    border: 3px solid rgb(181, 137, 34);
+    border-radius: 50%;
+    color: rgb(181, 137, 34);
+    margin: 3rem 0.5rem;
+    transition: 0.3s ease-in-out;
+}
+.socialicons a:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(181, 137, 34);
+    transform: scale(1.2) translateY(-5px);
+    box-shadow: 0 0 25px rgb(181, 137, 34);
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30rem;
+    background-color: #080808;
+}
+
+.aboutimg img{
+    width: 28vw;
+    border-radius: 42px;
+    box-shadow: 0 0 25px rgba(173, 166, 147, 0.4);
+    transition: 0.3s ease-in-out;
+}
+
+.aboutimg img:hover{
+    box-shadow: 0 0 25px rgba(173, 166, 147, 0.4) , 
+    0 0 50px rgba(173, 166, 147, 0.4),
+    0 0 100px rgba(173, 166, 147, 0.4);
+}
+
+.aboutcontent h2{
+    font-size: 10rem;
+    text-align: left;
+}
+.aboutcontent p{
+    font-size: 3.5rem;
+    text-align: left;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(181, 137, 34);
+}
+::-webkit-scrollbar-track{
+    background-color: #080808;
+}
+
+.heading{
+    text-align: center;
+    font-size: 10rem;
+    margin: 5rem;
+}
+
+.services{
+    color: black;
+}
+.services h2{
+    color: white;
+}
+
+.services-cont{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.servicebox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(181, 137, 34);
+    height: 600px;
+    border-radius: 3rem;
+    cursor: pointer;
+    border: 5px solid transparent;
+    transition: 0.4s ease-in-out;
+}
+
+.servicebox:hover{
+    background: #080808;
+    color: rgb(181, 137, 34);
+    border: 5px solid rgb(181, 137, 34);
+    transform: scale(1.03);
+}
+.serviceinfo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+.serviceinfo h3{
+    font-size: 5rem;
+    margin: 2 rem 0;
+    font-weight: 800;
+}
+.serviceinfo p{
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.7;
+}
+
+.serviceinfo i{
+    font-size: 7rem;
+}
+
+.projectbox{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    place-items: center;
+    gap: 3rem;
+    row-gap: 5rem;
+}
+
+.projectcard{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #080808;
+    border: 2px solid rgb(181, 137, 34);
+    border-radius: 3rem;
+    gap: 2rem;
+    padding: 5rem 2rem;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgb(181, 137, 34);
+    transition: 0.3 ease;
+}
+.projectcard:hover{
+    box-shadow: 0 0 25px rgba(181, 137, 34, 0.7) , 
+    0 0 50px rgba(181, 137, 34 ,0.7),
+    0 0 100px rgba(181, 137, 34 ,0.7);
+}
+.projectcard img{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    max-width: 300px;
+    border-radius: 2rem;    
+    object-fit: cover;
+}
+.projectcard h3{
+    font-size: 4rem;
+    font-weight: 800;
+}
+.projectcard p{
+    font-size: 2rem;
+}
+.footer{
+    background-color: #000000;
+}
+.footer .socialicons{
+    text-align: center;
+}
+.footer .getintouch{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.footer .copyright{
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+@media(max-width:1080px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        padding: 1rem 3rem;
+        background: rgba(0,0,0,0.8);
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid rgb(181, 137, 34);
+        border-right: 2px solid rgb(181, 137, 34);
+        display: none;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    .navbar.active{
+        display: block;;
+    }
+    .home{
+        flex-direction: column-reverse;
+        margin: 5rem 0;
+        gap: 5rem;
+    }
+    .home-content{
+        align-items: center;
+        text-align: center;
+    }
+    .home-image img{
+        width: 40vw;
+    }
+    .about{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .about h3{
+        text-align: center;
+        margin: 2rem 0;
+    }
+    .about img{
+        display:12rem;
+    }
+}

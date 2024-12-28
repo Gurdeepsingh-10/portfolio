@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurdeep Singh</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">Gurdeep <span>Singh</span></a>
+        <i class= "bx bx-menu" id ="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#project">Projects</a>
+        </nav>
+    </header>
+    <script src="script.js"></script>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hello, It's <span>Gurdeep Singh</span></h1>
+            <h2><span id="element"></span></h2>
+            <div class="socialicons">
+            
+                <a href="https://github.com/Gurdeepsingh-10">
+                    <i class='bx bxl-github' ></i>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/gurdeep-singh-g10/">
+                    <i class='bx bxl-linkedin-square' ></i>
+                </a>
+                
+                <a href="gurdeepsingh.gs.2580@gmail.com">
+                    <i class='bx bxl-gmail'></i>
+                </a>
+    
+                <a href="">
+                    <i class='bx bxl-instagram-alt' ></i>
+                </a>
+            
+            </div>
+        </div>
+        
+        <div class="home-image"><img src="1.jpg" alt=""></div>
+        
+    </section>
+
+
+
+    <section class="about" id = "about">
+        <div class="aboutimg"><img src="about1.jpg" alt=""></div>
+        <div class="aboutcontent">
+            <h2>About Me</h2>
+            <p>I am Gurdeep , a sophomore majoring in Computer Science field . I'm profound in Web-Development , Machine learning , Deep Learning aquired with deep problem solving mentality </p>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">Services</h2>
+        <div class="services-cont">
+            <div class="servicebox">
+                <div class="serviceinfo">
+                    <i class="bx bxl-figma"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>"I craft intuitive and visually stunning designs that elevate user experiences. Let’s bring your ideas to life with seamless UI/UX solutions tailored just for you"</p>
+                    
+                </div>
+            </div>
+
+            <div class="servicebox">
+                <div class="serviceinfo">
+                    <i class="bx bx-code"></i>
+                    <h3>FullStack Developer</h3>
+                    <p>"I can build robust and scalable web applications, seamlessly combining front-end elegance with back-end efficiency. Let’s create solutions that bring your vision to reality"</p>
+                </div>
+            </div>
+            <div class="servicebox">
+                <div class="serviceinfo">
+                    <i class='bx bx-ghost' ></i>
+                    <h3>Cool Projects</h3>
+                    <p>"I thrive on tackling diverse projects and turning ideas into actionable solutions. Let’s collaborate and brainstorm to bring your concepts to life with creativity and precision."</p>
+                    
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="project" id = "project"> 
+        <h3 class="heading">Projects</h3>
+        <div class="projectbox">
+            <div class="projectcard">
+                <img src="objectdetection.png" alt="">
+                <h3>Object Detection (COCO)</h3>
+                <p>A C.O.C.O.(common objects in context) based object detection made using pure python and its libraries which identifies over 80+ day to day objects</p>
+            </div>
+
+            <div class="projectcard">
+                <img src="mouse.png" alt="">
+                <h3>Virtual Mouse</h3>
+                <p>Using Meadiapipe and opencv in python to make a working model of a mouse which can perform all functions of a mouse using only by tracking your hands</p>
+            </div>
+            
+            <div class="projectcard">
+                <img src="movie.png" alt="">
+                <h3>JetFlick</h3>
+                <p>Based on tmdb5000 dataset a movie recomendation system which on providing a movie name it would provide 5 similar movies from the tmdb500 dataset</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+        <div class="getintouch">Get in touch</div>
+        <div class="socialicons">
+            
+            <a href="https://github.com/Gurdeepsingh-10">
+                <i class='bx bxl-github' ></i>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/gurdeep-singh-g10/">
+                <i class='bx bxl-linkedin-square' ></i>
+            </a>
+            
+            <a href="gurdeepsingh.gs.2580@gmail.com">
+                <i class='bx bxl-gmail'></i>
+            </a>
+
+            <a href="">
+                <i class='bx bxl-instagram-alt' ></i>
+            </a>
+        
+        </div>
+        <p class="copyright"> © Gurdeep Singh | All Rights Reserved</p>
+
+    </footer>
+
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+
+    var typed = new Typed('#element', {
+      strings: ['Student', 'Web-Developer','Graphic Designer','Engineer','And much more'],
+      typeSpeed: 90,
+    });
+  </script>
+
+</body>
+</html>
